@@ -1,0 +1,6 @@
+framework module Pods_GenericScrollable_Tests {
+  umbrella header "Pods-GenericScrollable_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

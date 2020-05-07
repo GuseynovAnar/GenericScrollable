@@ -13,8 +13,10 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B1F08AEBC73665E60D0C96D8 /* Pods_GenericScrollable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5B20A963E8505C9164DA6F /* Pods_GenericScrollable_Example.framework */; };
+		CF5AE873246474470005E215 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5AE872246474470005E215 /* MovieViewModel.swift */; };
+		CF5AE875246476D80005E215 /* MovieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5AE874246476D80005E215 /* MovieCellView.swift */; };
+		CF5AE878246477A80005E215 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5AE877246477A80005E215 /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		2327F04B2D1F8DB66340B20C /* Pods-GenericScrollable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericScrollable_Example.debug.xcconfig"; path = "Target Support Files/Pods-GenericScrollable_Example/Pods-GenericScrollable_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4837D2A1AD59937E5CAB3DBE /* GenericScrollable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GenericScrollable.podspec; path = ../GenericScrollable.podspec; sourceTree = "<group>"; };
+		4837D2A1AD59937E5CAB3DBE /* GenericScrollable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GenericScrollable.podspec; path = ../GenericScrollable.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* GenericScrollable_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericScrollable_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +41,14 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* GenericScrollable_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericScrollable_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6CEFB23C98D97D4E10B6CA29 /* Pods-GenericScrollable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericScrollable_Example.release.xcconfig"; path = "Target Support Files/Pods-GenericScrollable_Example/Pods-GenericScrollable_Example.release.xcconfig"; sourceTree = "<group>"; };
-		82B4D72527788B7B7C5DA264 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		879EB1EB9A5C2F53D17B99A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		82B4D72527788B7B7C5DA264 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		879EB1EB9A5C2F53D17B99A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		969D7554D84F0C3D981D27B6 /* Pods-GenericScrollable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericScrollable_Tests.release.xcconfig"; path = "Target Support Files/Pods-GenericScrollable_Tests/Pods-GenericScrollable_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BDDD353D0D3D5C104A9A902D /* Pods_GenericScrollable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericScrollable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5AE872246474470005E215 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		CF5AE874246476D80005E215 /* MovieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellView.swift; sourceTree = "<group>"; };
+		CF5AE877246477A80005E215 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		CF5B20A963E8505C9164DA6F /* Pods_GenericScrollable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericScrollable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB40581FF88DFDB3F459288C /* Pods-GenericScrollable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericScrollable_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GenericScrollable_Tests/Pods-GenericScrollable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +97,9 @@
 		607FACD21AFB9204008FA782 /* Example for GenericScrollable */ = {
 			isa = PBXGroup;
 			children = (
+				CF5AE8762464778D0005E215 /* Helpers */,
+				CF5AE871246473E90005E215 /* View */,
+				CF5AE870246473DA0005E215 /* ViewModel */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -115,7 +122,6 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -147,7 +153,6 @@
 				FB40581FF88DFDB3F459288C /* Pods-GenericScrollable_Tests.debug.xcconfig */,
 				969D7554D84F0C3D981D27B6 /* Pods-GenericScrollable_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -158,6 +163,30 @@
 				BDDD353D0D3D5C104A9A902D /* Pods_GenericScrollable_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF5AE870246473DA0005E215 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF5AE872246474470005E215 /* MovieViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF5AE871246473E90005E215 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF5AE874246476D80005E215 /* MovieCellView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CF5AE8762464778D0005E215 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CF5AE877246477A80005E215 /* UIApplication+Extension.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +219,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				84C4F15C71BB8397730D06BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,10 +242,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RCVMS2D4SR;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RCVMS2D4SR;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -285,26 +316,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		84C4F15C71BB8397730D06BE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GenericScrollable_Tests/Pods-GenericScrollable_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenericScrollable_Tests/Pods-GenericScrollable_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C1182546E4880F0DF8B1EF8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +363,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5AE873246474470005E215 /* MovieViewModel.swift in Sources */,
+				CF5AE875246476D80005E215 /* MovieCellView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				CF5AE878246477A80005E215 /* UIApplication+Extension.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -499,13 +512,15 @@
 			baseConfigurationReference = 2327F04B2D1F8DB66340B20C /* Pods-GenericScrollable_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RCVMS2D4SR;
 				INFOPLIST_FILE = GenericScrollable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -514,13 +529,15 @@
 			baseConfigurationReference = 6CEFB23C98D97D4E10B6CA29 /* Pods-GenericScrollable_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RCVMS2D4SR;
 				INFOPLIST_FILE = GenericScrollable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -528,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB40581FF88DFDB3F459288C /* Pods-GenericScrollable_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RCVMS2D4SR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -550,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 969D7554D84F0C3D981D27B6 /* Pods-GenericScrollable_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RCVMS2D4SR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,0 +1,16 @@
+PODS:
+  - GenericScrollable (0.1.0)
+
+DEPENDENCIES:
+  - GenericScrollable (from `../`)
+
+EXTERNAL SOURCES:
+  GenericScrollable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GenericScrollable: ec144988d54a64cce048311d992160d3f995c312
+
+PODFILE CHECKSUM: 48387299af8a0c7a44a9cb35cd712bad097782f9
+
+COCOAPODS: 1.9.1
